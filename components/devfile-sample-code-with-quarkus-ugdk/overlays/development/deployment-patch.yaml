@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-ugdk
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoupuicluster/karthik-jk-tenant/my-app-1/devfile-sample-code-with-quarkus-ugdk@sha256:0f68e883a5b4ee6eca841f1cc51498a819e1d5601621b6af20c4bc547d64ba04
+        name: my-java-quarkus
+        resources: {}
+status: {}
